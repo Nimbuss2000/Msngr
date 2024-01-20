@@ -11,6 +11,14 @@
 		2C2841BA2B4CD548003570F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2841B92B4CD548003570F7 /* ContentView.swift */; };
 		2C2841BC2B4CD549003570F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2841BB2B4CD549003570F7 /* Assets.xcassets */; };
 		2C2841BF2B4CD549003570F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2841BE2B4CD549003570F7 /* Preview Assets.xcassets */; };
+		2C2841D82B4E07E6003570F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2841D72B4E07E6003570F7 /* LoginView.swift */; };
+		2C84460E2B54A4F6007B557A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84460D2B54A4F6007B557A /* RegistrationView.swift */; };
+		2C8446112B54A918007B557A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8446102B54A918007B557A /* InboxView.swift */; };
+		2CB226432B56ED9C0020EC61 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB226422B56ED9C0020EC61 /* ActiveNowView.swift */; };
+		2CB226452B5879820020EC61 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB226442B5879820020EC61 /* InboxRowView.swift */; };
+		2CB226482B59B8220020EC61 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB226472B59B8220020EC61 /* NewMessageView.swift */; };
+		2CB2264D2B59CE800020EC61 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2264C2B59CE800020EC61 /* ProfileView.swift */; };
+		2CB2264F2B59D85E0020EC61 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2264E2B59D85E0020EC61 /* SettingsOptionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		2C2841B92B4CD548003570F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C2841BB2B4CD549003570F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2841BE2B4CD549003570F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C2841D72B4E07E6003570F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2C84460D2B54A4F6007B557A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		2C8446102B54A918007B557A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		2CB226422B56ED9C0020EC61 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		2CB226442B5879820020EC61 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		2CB226472B59B8220020EC61 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		2CB2264C2B59CE800020EC61 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2CB2264E2B59D85E0020EC61 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		2C2841B62B4CD548003570F7 /* Missanger */ = {
 			isa = PBXGroup;
 			children = (
-				2C2841B72B4CD548003570F7 /* MissangerApp.swift */,
-				2C2841B92B4CD548003570F7 /* ContentView.swift */,
+				2C2841CF2B4E06C8003570F7 /* App */,
+				2C2841D22B4E06F5003570F7 /* Extensions */,
+				2C2841D12B4E06EB003570F7 /* Core */,
+				2C2841D02B4E06D2003570F7 /* Model */,
+				2C2841D32B4E0723003570F7 /* Service */,
 				2C2841BB2B4CD549003570F7 /* Assets.xcassets */,
 				2C2841BD2B4CD549003570F7 /* Preview Content */,
 			);
@@ -65,6 +84,123 @@
 				2C2841BE2B4CD549003570F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C2841CF2B4E06C8003570F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C2841B72B4CD548003570F7 /* MissangerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C2841D02B4E06D2003570F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2841D12B4E06EB003570F7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2CB226412B56ED5C0020EC61 /* ActiveNow */,
+				2C2841D42B4E078D003570F7 /* Authentication */,
+				2C84460F2B54A8F8007B557A /* Inbox */,
+				2CB226462B59B8040020EC61 /* NewMessage */,
+				2CB226492B59CD660020EC61 /* Profile */,
+				2C2841D52B4E07A1003570F7 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2C2841D22B4E06F5003570F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C2841D32B4E0723003570F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2C2841D42B4E078D003570F7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2C2841D62B4E07C1003570F7 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2C2841D52B4E07A1003570F7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2C2841B92B4CD548003570F7 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2C2841D62B4E07C1003570F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C2841D72B4E07E6003570F7 /* LoginView.swift */,
+				2C84460D2B54A4F6007B557A /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C84460F2B54A8F8007B557A /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				2CB226442B5879820020EC61 /* InboxRowView.swift */,
+				2C8446102B54A918007B557A /* InboxView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		2CB226412B56ED5C0020EC61 /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				2CB226422B56ED9C0020EC61 /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		2CB226462B59B8040020EC61 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				2CB226472B59B8220020EC61 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		2CB226492B59CD660020EC61 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2264B2B59CE6E0020EC61 /* View */,
+				2CB2264A2B59CE5C0020EC61 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2CB2264A2B59CE5C0020EC61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2264E2B59D85E0020EC61 /* SettingsOptionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CB2264B2B59CE6E0020EC61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2264C2B59CE800020EC61 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB2264F2B59D85E0020EC61 /* SettingsOptionsViewModel.swift in Sources */,
+				2CB226452B5879820020EC61 /* InboxRowView.swift in Sources */,
+				2CB2264D2B59CE800020EC61 /* ProfileView.swift in Sources */,
+				2CB226482B59B8220020EC61 /* NewMessageView.swift in Sources */,
+				2C2841D82B4E07E6003570F7 /* LoginView.swift in Sources */,
 				2C2841BA2B4CD548003570F7 /* ContentView.swift in Sources */,
+				2C8446112B54A918007B557A /* InboxView.swift in Sources */,
+				2CB226432B56ED9C0020EC61 /* ActiveNowView.swift in Sources */,
 				2C2841B82B4CD548003570F7 /* MissangerApp.swift in Sources */,
+				2C84460E2B54A4F6007B557A /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

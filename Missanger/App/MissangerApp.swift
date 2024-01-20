@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct MissangerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup {   
+            LoginView()
         }
     }
 }
